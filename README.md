@@ -5,13 +5,13 @@
 ## 🔧 Windows System Control Panel Access Shortcuts
 In this section, we will explore some essential Control Panel and System Tools shortcuts to make your experience smoother on a Windows system. These tools are perfect for quickly accessing various system settings and configurations.
 
-Control Panel
+### Control Panel:
 Access the classic Control Panel on Windows quickly by using:
 ```bash
 control
 ```
 
-Network Panel:
+### Network Panel:
 ```bash
 ncpa.cpl
 ```
@@ -20,6 +20,7 @@ or
 control netconnections
 ```
 
+### System Panel:
 ```bash
 sysdm.cpl
 ```
@@ -27,8 +28,7 @@ or
 ```bash
 control system
 ```
-Devices and Printers
-Quickly open Devices and Printers settings by entering the following commands:
+### Devices and Printers:
 ```bash
 shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
 ```
