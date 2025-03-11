@@ -2,8 +2,8 @@
 🖥️ Windows System Control Panel Shortcuts 🖥️
 <p align="center"> <img src="https://raw.githubusercontent.com/your-repo-link/your-image.png" width="300" /> </p>
 <a href="https://discord.gg/your-discord-link"> <img src="https://img.shields.io/discord/1151869464405606400?style=for-the-badge&logo=discord&color=cba6f7&link=https%3A%2F%2Fdiscord.gg%9JEgZsfhex"> </a>
-
 </div>
+
 🔧 Windows System Control Panel Access Shortcuts
 In this section, we will explore some essential Control Panel and System Tools shortcuts to make your experience smoother on a Windows system. These tools are perfect for quickly accessing various system settings and configurations.
 
