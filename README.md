@@ -11,6 +11,7 @@ Access the classic Control Panel on Windows quickly by using:
 control
 ```
 <br>
+
 ### Network Panel:
 ```bash
 ncpa.cpl
