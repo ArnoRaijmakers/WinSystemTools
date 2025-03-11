@@ -21,6 +21,7 @@ or
 control netconnections
 ```
 <br>
+
 ### System Panel:
 ```bash
 sysdm.cpl
@@ -30,6 +31,7 @@ or
 control system
 ```
 <br>
+
 ### Devices and Printers:
 ```bash
 shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
