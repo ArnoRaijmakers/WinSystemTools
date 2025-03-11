@@ -16,6 +16,7 @@ Access the classic Control Panel on Windows quickly by using:
 ```bash
 control
 ```
+
 <br>
 
 ### Network Panel:
@@ -26,6 +27,7 @@ or
 ```bash
 control netconnections
 ```
+
 <br>
 
 ### System Panel:
@@ -36,6 +38,7 @@ or
 ```bash
 control system
 ```
+
 <br>
 
 ### Devices and Printers:
