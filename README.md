@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💌 ** KooL's Arch - Hyprland Install Script ** 💌
+# 🖥️ Windows System Control Panel Shortcuts 🖥️
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/assets/latte.png" width="400" />
@@ -11,9 +11,7 @@
 
 <br/>
 </div>
-<div align="center">
-🖥️ Windows System Control Panel Shortcuts 🖥️
-</div>
+
 
 ## 🔧 Windows System Control Panel Access Shortcuts
 In this section, we will explore some essential Control Panel and System Tools shortcuts to make your experience smoother on a Windows system. These tools are perfect for quickly accessing various system settings and configurations.
