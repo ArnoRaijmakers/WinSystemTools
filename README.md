@@ -10,7 +10,7 @@ Access the classic Control Panel on Windows quickly by using:
 ```bash
 control
 ```
-
+<br>
 ### Network Panel:
 ```bash
 ncpa.cpl
@@ -19,7 +19,7 @@ or
 ```bash
 control netconnections
 ```
-
+<br>
 ### System Panel:
 ```bash
 sysdm.cpl
@@ -28,6 +28,7 @@ or
 ```bash
 control system
 ```
+<br>
 ### Devices and Printers:
 ```bash
 shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
