@@ -9,18 +9,40 @@ In this section, we will explore some essential Control Panel and System Tools s
 
 Control Panel
 Access the classic Control Panel on Windows quickly by using:
-
+```bash
 control
-Or, to specify certain categories directly:
+```
 
-Network Panel: ncpa.cpl or control netconnections
-System Panel: sysdm.cpl or control system
+Network Panel:
+```bash
+ncpa.cpl
+```
+or
+```bash
+control netconnections
+```
+
+```bash
+sysdm.cpl
+```
+or
+```bash
+control system
+```
 Devices and Printers
 Quickly open Devices and Printers settings by entering the following commands:
-
+```bash
 shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
-Alternatively, you can use explorer shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
-Or, access via control printers
+```
+or
+```bash
+explorer shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
+```
+or
+```bash
+control printers
+```
+
 🚀 Why These Shortcuts?
 These shortcuts offer rapid access to critical system settings without navigating through the full Control Panel or Settings menus. Perfect for system administrators or power users who need to save time and boost productivity.
 
