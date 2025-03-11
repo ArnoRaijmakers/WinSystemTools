@@ -5,8 +5,7 @@
 
 
 ## 🔧 Windows System Control Panel Access
-These tools are perfect for quickly accessing various system settings and configurations for efficient management. Below are key commands that enable easey access to essential Windows Control Panel tools. These commands should be exdcuted in the Run Dialog, To open it, simply use the following shortcut:
-`Windows + R`
+These tools are ideal for quickly accessing various system settings and configurations. Below are commands that provide easy access to essential Windows Control Panel tools. These commands should be executed in the Run dialog. To open the Run dialog, simply press the following shortcut `Windows + R`, and then paste the command in the dialog.
 
 <br>
 
