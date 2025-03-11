@@ -8,7 +8,7 @@
 
 ## 🔧 Windows System Control Panel Access Shortcuts
 In this section, we will explore some essential Control Panel and System Tools shortcuts to make your experience smoother on a Windows system. These tools are perfect for quickly accessing various system settings and configurations.
-<br/>
+<br>
 
 ### Control Panel:
 Access the classic Control Panel on Windows quickly by using:
