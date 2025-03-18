@@ -1,5 +1,5 @@
 <div align="center">
-  # 🖥️ Windows System Control Panel Shortcuts 🖥️
+# 🖥️ Windows System Control Panel Shortcuts 🖥️
   
 </div>
 
