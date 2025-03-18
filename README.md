@@ -1,1 +1,39 @@
-- WinServManagement: Automate the deployment and configuration of Windows Server environments, including standalone servers, domain controllers, and additional domain controllers. The base server configuration script ensures essential settings and updates are applied. The domain controller setup includes domain creation and DNS configuration, while the additional domain controller setup manages domain joining and DNS synchronization. Each script incorporates the baseline server configuration by default.Automate the installation and configuration of Windows Servers, including Default Windows Server, Domain Controller, and Secondary Domain Controller setups. The Default Windows Server configuration script ensures necessary settings and updates. The Domain Controller includes domain creation and DNS setup/configuration. while the Secondary Domain Controller script manages domain joining and DNS setup/configuration. Each script includes the default Windows Server configuration by default.
+<div align="center">
+
+# ⚙️ Windows Server Management ⚙️
+
+<br/>
+</div>
+
+## 🛠️ Windows Server Scripts
+Automate the deployment and configuration of Windows Server environments, including standalone servers, domain controllers, and additional domain controllers. The base configuration script applies essential settings and updates to the server. The domain controller setup script handles domain creation and DNS configuration, while the additional domain controller script manages domain joining and DNS synchronization. Each script includes the baseline server configuration by default, ensuring a consistent setup across all server roles.
+
+<br>
+
+## 🏢 Active Directory Management
+Here are some utility command to validate and ease management of Active Directory.
+
+<br>
+
+### NetUser:
+This is a command-line tool in Windows used for managing user accounts, allowing administrators to create, modify, display, or delete user accounts on local or domain systems
+```bash
+net user j.doe
+```
+
+<br>
+
+### Copy User Groups:
+This script copies the exact group memberships of an already existing user and adds a new user to the same groups.
+```bash
+$ReferenceUser = "j.doe"
+$TargetUser  = "a.smith"
+
+# Get groups of the existing user
+$Groups = Get-ADUser -Identity $ReferenceUser  -Properties MemberOf | Select-Object -ExpandProperty MemberOf
+
+# Add the new user to the same groups
+foreach ($Group in $Groups) {
+    Add-ADGroupMember -Identity $Group -Members $TargetUser 
+}
+```
