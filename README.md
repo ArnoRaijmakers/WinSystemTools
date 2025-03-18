@@ -11,7 +11,7 @@ Automate the deployment and configuration of Windows Server environments, includ
 <br>
 
 ## 🏢 Active Directory Management
-Here are some utility command to validate and ease management of Active Directory.
+Here are some utility commands to validate and simplify the management of Active Directory users and computers. It is recommended to run these commands as an Administrator in PowerShell.
 
 <br>
 
