@@ -15,18 +15,18 @@ Here are some utility commands to validate and simplify the management of Active
 
 <br>
 
-### NetUser:
-This is a command in Windows used for managing user accounts, allowing administrators to create, modify, display, or delete user accounts on local or domain systems.
-```bash
-net user j.doe
-```
-
-<br>
-
 ### dsregcmd /status:
 This is Windows command is used to display the device registration status and information about how the device is joined to Azure Active Directory (Azure AD) or Active Directory Domain Services (AD DS).
 ```bash
 dsregcmd /status
+```
+
+<br>
+
+### NetUser:
+This is a command in Windows used for managing user accounts, allowing administrators to create, modify, display, or delete user accounts on local or domain systems.
+```bash
+net user j.doe
 ```
 
 <br>
