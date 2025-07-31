@@ -23,6 +23,22 @@ net user j.doe
 
 <br>
 
+### dsregcmd /status:
+This is Windows command is used to display the device registration status and information about how the device is joined to Azure Active Directory (Azure AD) or Active Directory Domain Services (AD DS).
+```bash
+dsregcmd /status
+```
+
+<br>
+
+### gpresult /r:
+This is a Windows command that displays the Resultant Set of Policy (RSoP) information for a user and computer, showing which Group Policy settings are currently applied and their sources.
+```bash
+gpresult /r
+```
+
+<br>
+
 ### Copy User Groups:
 This script copies the exact group memberships of an already existing user and adds a new user to the same groups.
 ```bash
