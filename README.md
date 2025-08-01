@@ -57,6 +57,8 @@ foreach ($Group in $Groups) {
 
 <div align="center">
 
+<br>
+
 # 🖥️ Windows System Control Panel Shortcuts 🖥️
 
 <br/>
