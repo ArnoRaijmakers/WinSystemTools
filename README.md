@@ -9,6 +9,15 @@
 Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process
 Save the attached "Retrieve-AllMailboxDelegations.ps1" file to your local `C:\Temp\`.
 
+### Retrieve Mailbox Delegations:
+Download the PowerShell script to your local machine:
+
+<a href="./Retrieve-AllMailboxDelegations.ps1" download="Retrieve-AllMailboxDelegations.ps1">
+  <button style="background-color: #0078d4; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+    📥 Download Retrieve-AllMailboxDelegations.ps1
+  </button>
+</a>
+
 Open PowerShell as administrator and execute the following commands in sequence.
 ```bash
 Connect-ExchangeOnline -UserPrincipalName <e-mail>
