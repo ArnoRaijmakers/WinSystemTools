@@ -112,8 +112,3 @@ or
 ```bash
 control printers
 ```
-
-🚀 Why These Shortcuts?
-These shortcuts offer rapid access to critical system settings without navigating through the full Control Panel or Settings menus. Perfect for system administrators or power users who need to save time and boost productivity.
-
-<div align="center"> <p>👉 **Try these shortcuts to make your Windows management a breeze!** 👈</p></div>
