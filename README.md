@@ -11,7 +11,12 @@ These commands are ideal for quickly configuring shared mailbox sent items behav
 <br>
 
 ### PowerShell Configuration:
-Configure sent items to be stored only in the shared mailbox but Global administrator or Exchange adminisrator rights are needed.
+Open PowerShell locally as administrator and paste the command below. Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process.
+```bash
+Connect-ExchangeOnline -UserPrincipalName <e-mail>
+```
+
+Configure sent items to be stored only in the shared mailbox.
 ```bash
 powershellSet-MailboxSentItemsConfiguration -Identity sharedmailbox@yourdomain.com -SendAsItemsCopiedTo From -SendOnBehalfOfItemsCopiedTo From
 ```
@@ -30,10 +35,8 @@ File > Account Settings > Account Settings > Select Account > Change > More Sett
 Access Windows Registry Editor to modify Outlook behavior. To open this open the Run dialog via `Windows + R`, and type `regedit`.
 Then nevigate to.
 ```bash
-Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\<versie>\Outlook\Preferences
+Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Preferences
 ```
-
-<br>
 
 Add the following DWORD value for delegate sent items behavior.
 ```bash
