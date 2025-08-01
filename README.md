@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚙️ Windows Server Management ⚙️
+# ⚙️ Windows Server/Computer Management ⚙️
 
 <br/>
 </div>
