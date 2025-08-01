@@ -16,7 +16,7 @@ Here are some utility commands to validate and simplify the management of Active
 
 <br>
 
-### dsregcmd /status:
+### DSregcmd:
 This is Windows command is used to display the device registration status and information about how the device is joined to Azure Active Directory (Azure AD) or Active Directory Domain Services (AD DS).
 ```bash
 dsregcmd /status
@@ -32,7 +32,7 @@ net user j.doe
 
 <br>
 
-### gpresult /r:
+### GPresult:
 This is a Windows command that displays the Resultant Set of Policy (RSoP) information for a user and computer, showing which Group Policy settings are currently applied and their sources.
 ```bash
 gpresult /r
