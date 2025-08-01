@@ -1,11 +1,11 @@
 <div align="center">
  
-# ☁️ M365 Shared Mailbox Sent Items Configuration ☁️
+# ☁️ Microsoft 365 Management ☁️
 
 <br/>
 </div>
 
-## 📮 M365 Shared Mailbox Configuration
+## 📮 M365 Shared Mailbox Sent Items Configuration
 These commands are ideal for quickly configuring shared mailbox sent items behavior in Microsoft 365. By default, emails sent from a shared mailbox are stored in your personal Sent Items folder instead of the shared mailbox's Sent Items folder. Below are solutions to configure this behavior properly.
 
 <br>
