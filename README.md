@@ -9,6 +9,7 @@
 Automate the deployment and configuration of Windows Server environments, including standalone servers, domain controllers, and additional domain controllers. The base configuration script applies essential settings and updates to the server. The domain controller setup script handles domain creation and DNS configuration, while the additional domain controller script manages domain joining and DNS synchronization. Each script includes the baseline server configuration by default, ensuring a consistent setup across all server roles.
 
 <br>
+### Comming soon
 
 ## 🏢 Active Directory Management
 Here are some utility commands to validate and simplify the management of Active Directory users and computers. It is recommended to run these commands as an Administrator in PowerShell.
