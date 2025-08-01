@@ -7,15 +7,13 @@
 
 ### Retrieve Mailbox Delegations:
 Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process
-Save the attached "Retrieve-AllMailboxDelegations.ps1" file to your local `C:\Temp\`.
 
-### Retrieve Mailbox Delegations:
-Download the PowerShell script to your local machine:
-
-**Download the PowerShell script:**
+Download the PowerShell script to your local machine.
 1. Right-click this link: [Retrieve-AllMailboxDelegations.ps1](https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Retrieve-AllMailboxDelegations.ps1)
-2. Select "Save link as..." or "Save target as..."
+2. Select "Save link as..."
 3. Save to `C:\Temp\`
+
+<br>
 
 Open PowerShell as administrator and execute the following commands in sequence.
 ```bash
