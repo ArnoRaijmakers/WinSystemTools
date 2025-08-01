@@ -12,11 +12,7 @@ Save the attached "Retrieve-AllMailboxDelegations.ps1" file to your local `C:\Te
 ### Retrieve Mailbox Delegations:
 Download the PowerShell script to your local machine:
 
-<a href="https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Retrieve-AllMailboxDelegations.ps1" download="Retrieve-AllMailboxDelegations.ps1">
-  <button style="background-color: #0078d4; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
-    📥 Download Retrieve-AllMailboxDelegations.ps1
-  </button>
-</a>
+<p><strong>Download the script:</strong> Right-click → <a href="https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Retrieve-AllMailboxDelegations.ps1" target="_blank">Retrieve-AllMailboxDelegations.ps1</a> ← and select "Save link as..." or "Save target as..."</p>
 
 Open PowerShell as administrator and execute the following commands in sequence.
 ```bash
