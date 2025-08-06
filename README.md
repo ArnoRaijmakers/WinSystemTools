@@ -30,7 +30,7 @@ Wait for the export to complete. The results will be showed and also saved to `C
 <br>
 <br>
 
-### Copy group memberschip 365:
+### Copy Group Memberschip:
 Note that Global Administrator rights are required, and you will need to authenticate during the process. This will copy only the group memberships and not the distribution lists.
 
 Download the PowerShell script to your local machine.
