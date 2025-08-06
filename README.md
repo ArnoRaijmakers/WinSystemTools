@@ -18,7 +18,7 @@ Here are some utility commands to validate and simplify the management of Active
 
 ### DSregcmd:
 This is Windows command is used to display the device registration status and information about how the device is joined to Azure Active Directory (Azure AD) or Active Directory Domain Services (AD DS).
-```bash
+```cmd
 dsregcmd /status
 ```
 
@@ -26,7 +26,7 @@ dsregcmd /status
 
 ### NetUser:
 This is a command in Windows used for managing user accounts, allowing administrators to create, modify, display, or delete user accounts on local or domain systems.
-```bash
+```cmd
 net user j.doe
 ```
 
@@ -34,7 +34,7 @@ net user j.doe
 
 ### GPresult:
 This is a Windows command that displays the Resultant Set of Policy (RSoP) information for a user and computer, showing which Group Policy settings are currently applied and their sources.
-```bash
+```cmd
 gpresult /r
 ```
 
@@ -42,7 +42,7 @@ gpresult /r
 
 ### Copy User Groups:
 This script copies the exact group memberships of an already existing user and adds a new user to the same groups.
-```bash
+```powershell
 $ReferenceUser = "j.doe"
 $TargetUser  = "a.smith"
 
@@ -72,43 +72,43 @@ These tools are ideal for quickly accessing various system settings and configur
 
 ### Control Panel:
 Access the classic Control Panel on Windows quickly by using:
-```bash
+```run
 control
 ```
 
 <br>
 
 ### Network Panel:
-```bash
+```run
 ncpa.cpl
 ```
 or
-```bash
+```run
 control netconnections
 ```
 
 <br>
 
 ### System Panel:
-```bash
+```run
 sysdm.cpl
 ```
 or
-```bash
+```run
 control system
 ```
 
 <br>
 
 ### Devices and Printers:
-```bash
+```run
 shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
 ```
 or
-```bash
+```run
 explorer shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
 ```
 or
-```bash
+```run
 control printers
 ```
