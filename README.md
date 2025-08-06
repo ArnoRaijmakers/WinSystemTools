@@ -59,7 +59,7 @@ C:\Scripts\.\Copy-GroupMemberships.ps1 -UserId "j.doe@domain.com" -TargetUserId 
 <br>
 
 ## 📮 M365 Shared Mailbox Sent Items Configuration
-These commands are ideal for quickly configuring shared mailbox sent items behavior in Microsoft 365. By default, emails sent from a shared mailbox are stored in your personal Sent Items folder instead of the shared mailbox's Sent Items folder. Below are solutions to configure this behavior properly.
+These commands are for configuring shared mailbox sent items behavior. Below are solutions to configure this behavior properly, so that sent items go into the shared mailbox’s Sent Items folder and not the personal mailbox.
 
 <br>
 
@@ -74,6 +74,9 @@ Configure sent items to be stored only in the shared mailbox.
 ```bash
 powershellSet-MailboxSentItemsConfiguration -Identity sharedmailbox@yourdomain.com -SendAsItemsCopiedTo From -SendOnBehalfOfItemsCopiedTo From
 ```
+> [!NOTE]
+> - When both values are set to `From`, emails sent from the shared mailbox are saved in the shared mailbox’s Sent Items folder.
+> - When both values are set to `Sender`, emails sent from the shared mailbox are saved in the user’s personal Sent Items folder.
 
 <br>
 
@@ -85,16 +88,77 @@ File > Account Settings > Account Settings > Select Account > Change > More Sett
 
 <br>
 
-### Registry Configuration (Local Outlook Only):
+### 🖥️ Registry Fix (Client-Side):
 Access Windows Registry Editor to modify Outlook behavior. To open this open the Run dialog via `Windows + R`, and type `regedit`.
 Then nevigate to.
 ```bash
 Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Preferences
 ```
 
-Add the following DWORD value for delegate sent items behavior.
+> [!IMPORTANT]
+> Replace <version> with your Office version number:
+> - 16.0 for Office 2016, 2019, and Microsoft 365
+> - 15.0 for Office 2013
+> - 14.0 for Office 2010
+
+Add the following DWORD (32-bit) value for delegate sent items behavior.
 ```bash
 Name: DelegateSentItemsStyle
 Type: REG_DWORD  
 Value: 1
 ```
+
+> [!NOTE]
+> - When the value is set to `1`, emails sent from the shared mailbox are saved in the shared mailbox’s Sent Items folder.
+> - When the value is set to `0` or the DWORD is deleted, emails sent from the shared mailbox are saved in the user’s personal Sent Items folder.
+
+<br>
+<br>
+
+## 📮 M365 Shared Mailbox Deleted Items Configuration
+These commands are for configuring shared mailbox deleted items behavior. Below are solutions to configure this behavior properly, so that deleted items go into the shared mailbox’s Deleted Items folder and not the personal mailbox.
+
+<br>
+
+### PowerShell Configuration:
+Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process.
+Open PowerShell locally as administrator and paste the command below.
+```bash
+Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
+```
+
+Configure sent items to be stored only in the shared mailbox.
+```bash
+Set-Mailbox -Identity sharedmailbox@yourdomain.com -MessageCopyForSentAsEnabled $true -MessageCopyForSendOnBehalfEnabled $true
+Set-Mailbox -Identity sharedmailbox@yourdomain.com -RetainDeletedItemsFor 30
+```
+> [!NOTE]
+> - When both values are set to `$true`, items deleted from the shared mailbox are moved to the shared mailbox’s Deleted Items folder.
+> - When both values are set to `$false`, items deleted from the shared mailbox are moved to the user’s personal Deleted Items folder.
+
+<br>
+
+### 🖥️ Registry Fix (Client-Side):
+Access Windows Registry Editor to modify Outlook behavior. To open this open the Run dialog via `Windows + R`, and type `regedit`.
+Then nevigate to.
+
+```bash
+HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Options\General
+```
+
+> [!IMPORTANT]
+> Replace <version> with your Office version number:
+> - 16.0 for Office 2016, 2019, and Microsoft 365
+> - 15.0 for Office 2013
+> - 14.0 for Office 2010
+
+Add the following DWORD (32-bit) value for delegate sent items behavior.
+```bash
+Name: DelegateWastebasketStyle
+Type: REG_DWORD
+Value: 4
+```
+
+> [!NOTE]
+> - When the value is set to `4`, items deleted from the shared mailbox go to the shared mailbox’s Deleted Items folder.
+> - When the value is set to `8`, items deleted from the shared mailbox go to the user’s personal Deleted Items folder.
