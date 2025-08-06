@@ -5,7 +5,7 @@
 <br/>
 </div>
 
-### Retrieve Mailbox Delegations:
+## Retrieve Mailbox Delegations:
 Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process. This retrieves all the mailbox delegation of the whole M365 Tenant.
 
 Download the PowerShell script to your local machine.
@@ -30,7 +30,7 @@ Wait for the export to complete. The results will be showed and also saved to `C
 <br>
 <br>
 
-### Copy Group Memberschip:
+## Copy Group Memberschip:
 Note that Global Administrator rights are required, and you will need to authenticate during the process. This script will copy all the group memberships from a existing user.
 
 Download the PowerShell script to your local machine.
