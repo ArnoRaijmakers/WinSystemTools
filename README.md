@@ -35,6 +35,30 @@ Wait for the export to complete. The results will be showed and also saved to `C
 <br>
 <br>
 
+
+### Copy group memberschip 365:
+Note that Global Administrator rights are required, and you will need to authenticate during the process
+
+Download the PowerShell script to your local machine.
+1. Right-click this link: [Copy-GroupMemberships.ps1](https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Copy-GroupMemberships.ps1)
+2. Select "Save link as..."
+3. Save to `C:\Temp\`
+
+<br>
+
+Open PowerShell as administrator and execute the following commands in sequence.
+```bash
+Connect-MgGraph -Scopes "User.Read.All", "Group.Read.All", "GroupMember.ReadWrite.All" -NoWelcome
+```
+
+Execute the script.
+```bash
+C:\scripts\.\Copy-GroupMemberships.ps1 -UserId "j.doe@domain.com" -TargetUserId "a.smith@domain.com"
+```
+
+<br>
+<br>
+
 ## 📮 M365 Shared Mailbox Sent Items Configuration
 These commands are ideal for quickly configuring shared mailbox sent items behavior in Microsoft 365. By default, emails sent from a shared mailbox are stored in your personal Sent Items folder instead of the shared mailbox's Sent Items folder. Below are solutions to configure this behavior properly.
 
