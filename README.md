@@ -142,7 +142,7 @@ Set-Mailbox -Identity info@domain.com -RetainDeletedItemsFor 30
 Access Windows Registry Editor to modify Outlook behavior. To open this open the Run dialog via `Windows + R`, and type `regedit`.
 Then nevigate to.
 
-```powershell
+```regestry
 HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Options\General
 ```
 
@@ -153,7 +153,7 @@ HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Options\General
 > - 14.0 for Office 2010
 
 Add the following DWORD (32-bit) value for delegate sent items behavior.
-```bash
+```regestry
 Name: DelegateWastebasketStyle
 Type: REG_DWORD
 Value: 4
