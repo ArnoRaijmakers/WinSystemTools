@@ -72,7 +72,7 @@ Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
 
 Configure sent items to be stored only in the shared mailbox.
 ```bash
-powershellSet-MailboxSentItemsConfiguration -Identity sharedmailbox@yourdomain.com -SendAsItemsCopiedTo From -SendOnBehalfOfItemsCopiedTo From
+powershellSet-MailboxSentItemsConfiguration -Identity info@domain.com -SendAsItemsCopiedTo From -SendOnBehalfOfItemsCopiedTo From
 ```
 > [!NOTE]
 > - When both values are set to `From`, emails sent from the shared mailbox are saved in the shared mailbox’s Sent Items folder.
@@ -129,8 +129,8 @@ Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
 
 Configure sent items to be stored only in the shared mailbox.
 ```bash
-Set-Mailbox -Identity sharedmailbox@yourdomain.com -MessageCopyForSentAsEnabled $true -MessageCopyForSendOnBehalfEnabled $true
-Set-Mailbox -Identity sharedmailbox@yourdomain.com -RetainDeletedItemsFor 30
+Set-Mailbox -Identity info@domain.com -MessageCopyForSentAsEnabled $true -MessageCopyForSendOnBehalfEnabled $true
+Set-Mailbox -Identity info@domain.com -RetainDeletedItemsFor 30
 ```
 > [!NOTE]
 > - When both values are set to `$true`, items deleted from the shared mailbox are moved to the shared mailbox’s Deleted Items folder.
