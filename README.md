@@ -96,7 +96,7 @@ Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Preferenc
 ```
 
 > [!IMPORTANT]
-> Replace <version> with your Office version number:
+> Replace `version` with your Office version number:
 > - 16.0 for Office 2016, 2019, and Microsoft 365
 > - 15.0 for Office 2013
 > - 14.0 for Office 2010
@@ -147,7 +147,7 @@ HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Options\General
 ```
 
 > [!IMPORTANT]
-> Replace <version> with your Office version number:
+> Replace `version` with your Office version number:
 > - 16.0 for Office 2016, 2019, and Microsoft 365
 > - 15.0 for Office 2013
 > - 14.0 for Office 2010
