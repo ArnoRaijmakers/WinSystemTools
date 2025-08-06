@@ -15,7 +15,7 @@ Download the PowerShell script to your local machine.
 
 <br>
 
-Open local PowerShell as administrator and execute the following commands in sequence.
+Open local PowerShell as administrator and execute the following commands in sequence. First execute this command to login to Online Exchange.
 ```bash
 Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
 ```
