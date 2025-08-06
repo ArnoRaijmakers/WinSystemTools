@@ -62,7 +62,7 @@ These commands are ideal for quickly configuring shared mailbox sent items behav
 Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process.
 Open PowerShell locally as administrator and paste the command below.
 ```bash
-Connect-ExchangeOnline -UserPrincipalName <e-mail>
+Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
 ```
 
 Configure sent items to be stored only in the shared mailbox.
