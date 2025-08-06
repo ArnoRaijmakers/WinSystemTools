@@ -11,7 +11,7 @@ Note that Global Administrator or Exchange Administrator rights are required, an
 Download the PowerShell script to your local machine.
 1. Right-click this link: [Retrieve-AllMailboxDelegations.ps1](https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Retrieve-AllMailboxDelegations.ps1)
 2. Select "Save link as..."
-3. Save to `C:\Temp\`
+3. Save to `C:\Scripts\`
 
 <br>
 
@@ -20,14 +20,9 @@ Open PowerShell as administrator and execute the following commands in sequence.
 Connect-ExchangeOnline -UserPrincipalName <e-mail>
 ```
 
-Navigate to the script directory.
-```bash
-cd C:\Temp\
-```
-
 Execute the delegation retrieval script.
 ```bash
-.\Retrieve-AllMailboxDelegations.ps1
+C:\Scripts\.\Retrieve-AllMailboxDelegations.ps1
 ```
 
 Wait for the export to complete. The results will be showed and also saved to `C:\Temp\MailboxPermissions.csv`.
@@ -42,7 +37,7 @@ Note that Global Administrator rights are required, and you will need to authent
 Download the PowerShell script to your local machine.
 1. Right-click this link: [Copy-GroupMemberships.ps1](https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Copy-GroupMemberships.ps1)
 2. Select "Save link as..."
-3. Save to `C:\Temp\`
+3. Save to `C:\Scripts\`
 
 <br>
 
@@ -53,7 +48,7 @@ Connect-MgGraph -Scopes "User.Read.All", "Group.Read.All", "GroupMember.ReadWrit
 
 Execute the script.
 ```bash
-C:\scripts\.\Copy-GroupMemberships.ps1 -UserId "j.doe@domain.com" -TargetUserId "a.smith@domain.com"
+C:\Scripts\.\Copy-GroupMemberships.ps1 -UserId "j.doe@domain.com" -TargetUserId "a.smith@domain.com"
 ```
 
 <br>
