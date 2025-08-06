@@ -1,23 +1,3 @@
-<#
-    .SYNOPSIS
-    Copy-GroupMemberships.ps1
-
-    .DESCRIPTION
-    Copy all group memberships of a specified user to another user in Microsoft Entra ID.
-
-    .LINK
-    www.alitajran.com/copy-group-membership-from-one-user-to-another-in-microsoft-entra-id/
-
-    .NOTES
-    Written by: ALI TAJRAN
-    Website:    www.alitajran.com
-    LinkedIn:   linkedin.com/in/alitajran
-    X:          x.com/alitajran
-
-    .CHANGELOG
-    V1.00, 05/25/2025 - Initial version
-#>
-
 # Define parameters for the script
 param (
     [Parameter(Mandatory = $true, HelpMessage = "Enter the User ID (e.g., email or object ID) of the source Entra ID user")]
@@ -129,4 +109,5 @@ try {
 catch {
     # Handle errors (e.g., invalid UserId, insufficient permissions, or Graph API issues)
     Write-Host "An error occurred: $($_.Exception.Message)" -ForegroundColor Red
+
 }
