@@ -16,12 +16,12 @@ Download the PowerShell script to your local machine.
 <br>
 
 Open local PowerShell as administrator and execute the following commands in sequence. First execute this command to login to Online Exchange.
-```bash
+```powershell
 Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
 ```
 
 Execute the delegation retrieval script.
-```bash
+```powershell
 C:\Scripts\.\Retrieve-AllMailboxDelegations.ps1
 ```
 
@@ -41,17 +41,17 @@ Download the PowerShell script to your local machine.
 <br>
 
 Open local PowerShell as administrator and execute the following commands in sequence. First make sure you have installed Microsoft Graph.
-```bash
+```powershell
 Install-Module Microsoft.Graph -Force
 ```
 
 Execute this command to login to Entra ID.
-```bash
+```powershell
 Connect-MgGraph -Scopes "User.Read.All", "Group.Read.All", "GroupMember.ReadWrite.All" -NoWelcome
 ```
 
 Execute the script to copy the group memberships.
-```bash
+```powershell
 C:\Scripts\.\Copy-GroupMemberships.ps1 -UserId "j.doe@domain.com" -TargetUserId "a.smith@domain.com"
 ```
 
@@ -66,12 +66,12 @@ These commands are for configuring shared mailbox sent items behavior. Below are
 ### PowerShell Configuration:
 Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process.
 Open PowerShell locally as administrator and paste the command below.
-```bash
+```powershell
 Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
 ```
 
 Configure sent items to be stored only in the shared mailbox.
-```bash
+```powershell
 powershellSet-MailboxSentItemsConfiguration -Identity info@domain.com -SendAsItemsCopiedTo From -SendOnBehalfOfItemsCopiedTo From
 ```
 > [!NOTE]
@@ -91,7 +91,7 @@ File > Account Settings > Account Settings > Select Account > Change > More Sett
 ### 🖥️ Registry Fix (Client-Side):
 Access Windows Registry Editor to modify Outlook behavior. To open this open the Run dialog via `Windows + R`, and type `regedit`.
 Then nevigate to.
-```bash
+```regestry
 Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Preferences
 ```
 
@@ -102,7 +102,7 @@ Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Preferenc
 > - 14.0 for Office 2010
 
 Add the following DWORD (32-bit) value for delegate sent items behavior.
-```bash
+```regestry
 Name: DelegateSentItemsStyle
 Type: REG_DWORD  
 Value: 1
@@ -123,12 +123,12 @@ These commands are for configuring shared mailbox deleted items behavior. Below 
 ### PowerShell Configuration:
 Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process.
 Open PowerShell locally as administrator and paste the command below.
-```bash
+```powershell
 Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
 ```
 
 Configure sent items to be stored only in the shared mailbox.
-```bash
+```powershell
 Set-Mailbox -Identity info@domain.com -MessageCopyForSentAsEnabled $true -MessageCopyForSendOnBehalfEnabled $true
 Set-Mailbox -Identity info@domain.com -RetainDeletedItemsFor 30
 ```
