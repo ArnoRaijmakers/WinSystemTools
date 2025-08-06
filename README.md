@@ -6,7 +6,7 @@
 </div>
 
 ### Retrieve Mailbox Delegations:
-Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process
+Note that Global Administrator or Exchange Administrator rights are required, and you will need to authenticate during the process. This retrieves all the mailbox delegation of the whole M365 Tenant.
 
 Download the PowerShell script to your local machine.
 1. Right-click this link: [Retrieve-AllMailboxDelegations.ps1](https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Retrieve-AllMailboxDelegations.ps1)
@@ -30,9 +30,8 @@ Wait for the export to complete. The results will be showed and also saved to `C
 <br>
 <br>
 
-
 ### Copy group memberschip 365:
-Note that Global Administrator rights are required, and you will need to authenticate during the process
+Note that Global Administrator rights are required, and you will need to authenticate during the process. This will copy only the group memberships and not the distribution lists.
 
 Download the PowerShell script to your local machine.
 1. Right-click this link: [Copy-GroupMemberships.ps1](https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Copy-GroupMemberships.ps1)
@@ -46,7 +45,7 @@ Open PowerShell as administrator and execute the following commands in sequence.
 Connect-MgGraph -Scopes "User.Read.All", "Group.Read.All", "GroupMember.ReadWrite.All" -NoWelcome
 ```
 
-Execute the script.
+Execute the script to copy the group memberships.
 ```bash
 C:\Scripts\.\Copy-GroupMemberships.ps1 -UserId "j.doe@domain.com" -TargetUserId "a.smith@domain.com"
 ```
