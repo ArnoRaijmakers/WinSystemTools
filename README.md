@@ -142,7 +142,7 @@ Set-Mailbox -Identity info@domain.com -RetainDeletedItemsFor 30
 Access Windows Registry Editor to modify Outlook behavior. To open this open the Run dialog via `Windows + R`, and type `regedit`.
 Then nevigate to.
 
-```bash
+```powershell
 HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Options\General
 ```
 
