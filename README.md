@@ -17,7 +17,7 @@ Download the PowerShell script to your local machine.
 
 Open PowerShell as administrator and execute the following commands in sequence.
 ```bash
-Connect-ExchangeOnline -UserPrincipalName <e-mail>
+Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
 ```
 
 Execute the delegation retrieval script.
