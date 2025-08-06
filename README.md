@@ -82,7 +82,7 @@ powershellSet-MailboxSentItemsConfiguration -Identity info@domain.com -SendAsIte
 
 ### Outlook Desktop Configuration:
 Access account settings to configure sent items storage.
-```bash
+```
 File > Account Settings > Account Settings > Select Account > Change > More Settings > Advanced
 ```
 
