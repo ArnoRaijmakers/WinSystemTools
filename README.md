@@ -31,7 +31,7 @@ Wait for the export to complete. The results will be showed and also saved to `C
 <br>
 
 ### Copy Group Memberschip:
-Note that Global Administrator rights are required, and you will need to authenticate during the process. This will copy only the group memberships and not the distribution lists.
+Note that Global Administrator rights are required, and you will need to authenticate during the process. This will copy all the group memberships.
 
 Download the PowerShell script to your local machine.
 1. Right-click this link: [Copy-GroupMemberships.ps1](https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Copy-GroupMemberships.ps1)
