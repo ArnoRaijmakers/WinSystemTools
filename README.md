@@ -15,7 +15,7 @@ Download the PowerShell script to your local machine.
 
 <br>
 
-Open PowerShell as administrator and execute the following commands in sequence.
+Open local PowerShell as administrator and execute the following commands in sequence.
 ```bash
 Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
 ```
@@ -31,7 +31,7 @@ Wait for the export to complete. The results will be showed and also saved to `C
 <br>
 
 ### Copy Group Memberschip:
-Note that Global Administrator rights are required, and you will need to authenticate during the process. This will copy all the group memberships.
+Note that Global Administrator rights are required, and you will need to authenticate during the process. This script will copy all the group memberships from a existing user.
 
 Download the PowerShell script to your local machine.
 1. Right-click this link: [Copy-GroupMemberships.ps1](https://raw.githubusercontent.com/ArnoRaijmakers/WinSystemTools/M365Management/Copy-GroupMemberships.ps1)
@@ -40,7 +40,12 @@ Download the PowerShell script to your local machine.
 
 <br>
 
-Open PowerShell as administrator and execute the following commands in sequence.
+Open local PowerShell as administrator and execute the following commands in sequence. First make sure you have installed Microsoft Graph.
+```bash
+Install-Module Microsoft.Graph -Force
+```
+
+Execute this command to login to Entra ID.
 ```bash
 Connect-MgGraph -Scopes "User.Read.All", "Group.Read.All", "GroupMember.ReadWrite.All" -NoWelcome
 ```
