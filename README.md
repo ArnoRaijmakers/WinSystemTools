@@ -112,3 +112,15 @@ or
 ```run
 control printers
 ```
+
+<br>
+
+### Curent User Startup Folder:
+```run
+shell:startup
+```
+
+### System-Wide Startup folder:
+```run
+shell:common startup
+```
