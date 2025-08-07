@@ -162,3 +162,13 @@ Value: 4
 > [!NOTE]
 > - When the value is set to `4`, items deleted from the shared mailbox go to the shared mailbox’s Deleted Items folder.
 > - When the value is set to `8`, items deleted from the shared mailbox go to the user’s personal Deleted Items folder.
+
+
+
+
+<details>
+  <summary>Klik hier om te openen</summary>
+ 
+  Hier staat de verborgen inhoud.  
+  Je kunt hier meerdere regels tekst, codeblokken of andere Markdown gebruiken.
+</details>
