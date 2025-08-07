@@ -171,9 +171,16 @@ These commands are for configuring shared mailbox deleted items behavior. Below 
 
 <br>
 
-### Not Posyble to Sign In To Microsoft 365 Apps:
-can cause problems with Azure Active Directory (AAD) authentication, Microsoft account sign-in, and Windows Hello/biometric login, especially in environments using Microsoft 365, OneDrive, Teams, or hybrid Azure AD join.<br>
+### Not Possible to Sign In To Microsoft 365 Apps:
+Can cause problems with Azure Active Directory (AAD) authentication, Microsoft account sign-in, and Windows Hello/biometric login, especially in environments using Microsoft 365, OneDrive, Teams, or hybrid Azure AD join.<br>
 In the path specified below, there should be a file listed called `Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy` or similar. This file can be deleted, after which the Office applications should be reopened and login should be attempted again.
-```powershell
+```explorer
 C:\Users\%USERNAME%\AppData\Local\Packages
+```
+
+### Issues with Outlook Profiles:
+This folder stores local cache files and profiles used by Microsoft Outlook. Issues with these files can cause problems with Outlook performance, profile corruption, or connectivity issues with Microsoft 365 accounts, Exchange servers, or shared mailboxes.
+If Outlook behaves unexpectedly—such as failing to open, deleting specific files from this folder can help resolve the issue. Common files stored here include OST-files (Offline Outlook Data Files) know as the profile.
+```explorer
+C:\Users\%USERNAME%\AppData\Local\Microsoft\Outlook
 ```
