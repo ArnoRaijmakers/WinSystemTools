@@ -162,3 +162,18 @@ Value: 4
 > [!NOTE]
 > - When the value is set to `4`, items deleted from the shared mailbox go to the shared mailbox’s Deleted Items folder.
 > - When the value is set to `8`, items deleted from the shared mailbox go to the user’s personal Deleted Items folder.
+
+<br>
+<br>
+
+## Errors Bij Microsoft 365 Apps
+These commands are for configuring shared mailbox deleted items behavior. Below are solutions to configure this behavior properly, so that deleted items go into the shared mailbox’s Deleted Items folder and not the personal mailbox.
+
+<br>
+
+### Niet Aan Te Melden Bij Microsoft 365 Apps:
+can cause problems with Azure Active Directory (AAD) authentication, Microsoft account sign-in, and Windows Hello/biometric login, especially in environments using Microsoft 365, OneDrive, Teams, or hybrid Azure AD join.<br>
+In the path specified below, there should be a file listed called `Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy` or similar. This file can be deleted, after which the Office applications should be reopened and login should be attempted again.
+```powershell
+C:\Users\%USERNAME%\AppData\Local\Packages
+```
