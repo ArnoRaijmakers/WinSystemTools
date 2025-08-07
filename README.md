@@ -167,7 +167,7 @@ Value: 4
 
 
 <details>
-  <summary>Klik hier om te openen</summary>
+  <summary># Klik hier om te openen</summary>
  
   Hier staat de verborgen inhoud.  
   Je kunt hier meerdere regels tekst, codeblokken of andere Markdown gebruiken.
