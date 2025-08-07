@@ -114,9 +114,9 @@ Value: 1
 
 <br>
 <br>
-<details>
-<summary><h2>📮 M365 Shared Mailbox Deleted Items Configuration</h2>
-These commands are for configuring shared mailbox deleted items behavior. Below are solutions to configure this behavior properly, so that deleted items go into the shared mailbox’s Deleted Items folder and not the personal mailbox.</summary>
+
+## 📮 M365 Shared Mailbox Deleted Items Configuration
+These commands are for configuring shared mailbox deleted items behavior. Below are solutions to configure this behavior properly, so that deleted items go into the shared mailbox’s Deleted Items folder and not the personal mailbox.
 
 <br>
 
@@ -162,10 +162,3 @@ Value: 4
 > [!NOTE]
 > - When the value is set to `4`, items deleted from the shared mailbox go to the shared mailbox’s Deleted Items folder.
 > - When the value is set to `8`, items deleted from the shared mailbox go to the user’s personal Deleted Items folder.
-</details>
-
-
-<details>
-  <summary><h1>Titel in het groot</h1></summary>
-  Hier staat de verborgen inhoud.
-</details>
