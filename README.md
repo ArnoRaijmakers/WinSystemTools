@@ -58,7 +58,51 @@ C:\Scripts\.\Copy-GroupMemberships.ps1 -UserId "j.doe@domain.com" -TargetUserId 
 <br>
 <br>
 
-## 📮 M365 Shared Mailbox Sent Items Configuration
+## Grant Calender Access To Mailbox's
+These commands are used to configure calendar access on mailboxes and must always be executed using PowerShell. Below are the possible permission roles and the specific rights they provide. Examples are shown afterwards.
+
+- **Author:** CreateItems, DeleteOwnedItems, EditOwnedItems, FolderVisible, ReadItems
+- **Contributor:** CreateItems, FolderVisible
+- **Editor:** CreateItems, DeleteAllItems, DeleteOwnedItems, EditAllItems, EditOwnedItems, FolderVisible, ReadItems
+- **NonEditingAuthor:** CreateItems, DeleteOwnedItems, FolderVisible, ReadItems
+- **Owner:** CreateItems, CreateSubfolders, DeleteAllItems, DeleteOwnedItems, EditAllItems, EditOwnedItems, FolderContact, FolderOwner, FolderVisible, ReadItems
+- **PublishingAuthor:** CreateItems, CreateSubfolders, DeleteOwnedItems, EditOwnedItems, FolderVisible, ReadItems
+- **PublishingEditor:** CreateItems, CreateSubfolders, DeleteAllItems, DeleteOwnedItems, EditAllItems, EditOwnedItems, FolderVisible, ReadItems
+- **Reviewer:** FolderVisible, ReadItems
+
+<br>
+
+### PowerShell Configuration:
+Note you must have Global Administrator or Exchange Administrator rights. You will be prompted to authenticate during the process.
+Open PowerShell as Administrator and run the following command:
+```powershell
+Connect-ExchangeOnline -UserPrincipalName j.doe@domain.com
+```
+> [!Important]
+> Some Exchange naming may differ based on the language settings of the mailbox. For example the word `Calendar`, should be translated to Dutch, it is `Agenda`.
+
+Retrieve mailbox granted permissions:
+```powershell
+Get-MailboxFolderPermission -Identity info@domain.com:\Calendar
+```
+
+If the user is not listed, use this command:
+```powershell
+Add-MailboxFolderPermission -Identity info@domain.com:\Calendar -User j.doe@domain.com -AccessRights Reviewer
+```
+
+If the user is already listed and the permissions need to be updated, use.
+```powershell
+Add-MailboxFolderPermission -Identity info@domain.com:\Calendar -User j.doe@domain.com -AccessRights Owner
+```
+> [!NOTE]
+> To set global permissions for all users, use the argument `Default` for the `-User` parameter
+> Afterwards, always check if the permissions are properly granted.
+
+<br>
+<br>
+
+## M365 Shared Mailbox Sent Items Configuration
 These commands are for configuring shared mailbox sent items behavior. Below are solutions to configure this behavior properly, so that sent items go into the shared mailbox’s Sent Items folder and not the personal mailbox.
 
 <br>
@@ -115,7 +159,7 @@ Value: 1
 <br>
 <br>
 
-## 📮 M365 Shared Mailbox Deleted Items Configuration
+## M365 Shared Mailbox Deleted Items Configuration
 These commands are for configuring shared mailbox deleted items behavior. Below are solutions to configure this behavior properly, so that deleted items go into the shared mailbox’s Deleted Items folder and not the personal mailbox.
 
 <br>
