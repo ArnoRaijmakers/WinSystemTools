@@ -166,6 +166,6 @@ Value: 4
 
 
 <details>
-  <summary><strong>Titel in het groot</strong></summary>
+  <summary><h1>Titel in het groot</h1></summary>
   Hier staat de verborgen inhoud.
 </details>
