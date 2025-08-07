@@ -115,12 +115,13 @@ control printers
 
 <br>
 
-### Curent User Startup Folder:
+### Start-Up Folders
+#### Curent User:
 ```run
 shell:startup
 ```
-
-### System-Wide Startup folder:
+or
+#### System-Wide:
 ```run
 shell:common startup
 ```
