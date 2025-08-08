@@ -224,7 +224,7 @@ C:\Users\%USERNAME%\AppData\Local\Packages
 
 ### Issues with Outlook Profiles:
 This folder stores local cache files and profiles used by Microsoft Outlook. Issues with these files can cause problems with Outlook performance, profile corruption, or connectivity issues with Microsoft 365 accounts, Exchange servers, or shared mailboxes.
-If Outlook behaves unexpectedly—such as failing to open, deleting specific files from this folder can help resolve the issue. Common files stored here include OST-files (Offline Outlook Data Files) know as the profile.
+If Outlook behaves unexpectedly, such as failing to open, deleting specific files from this folder can help resolve the issue. Common files stored here include OST-files (Offline Outlook Data Files) know as the profile.
 ```explorer
 C:\Users\%USERNAME%\AppData\Local\Microsoft\Outlook
 ```
